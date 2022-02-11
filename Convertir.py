@@ -10,7 +10,7 @@ def Convertir(numero):
     if numero[-1]!="i":return[int(numero),0]
 
     #Solo imaginarios negativos
-    if (numero[-1]=="i" and positivos==0 and "-" in numero and numero.split("-")[0]=='') or (numero[-1]=="i" and positivos==0 and "-" not in numero):
+    if (numero[-1]=="i" and positivos==0 and "-" in numero and numero.split("-")[0]=='' and len(numero.split("-"))<3) or (numero[-1]=="i" and positivos==0 and "-" not in numero):
         return [0,int(numero[:-1])]
 
 
